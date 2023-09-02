@@ -15,7 +15,7 @@ st.set_page_config(page_title="Reports", page_icon=":bar_chart:",layout="wide")
 
 st.title(" :bar_chart: Plastic detection reports!!")
 
-df = pd.read_csv("E:\Projects and codes\Visualization for reva\synthetic_data.csv")
+df = pd.read_csv("synthetic_data.csv")
 
 col1, col2 = st.columns((2))
 df["time"] = pd.to_datetime(df["time"], format="%Y-%m-%d")
